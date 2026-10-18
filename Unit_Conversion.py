@@ -30,7 +30,7 @@ def convert(value, from_unit, to_unit, category): #category can be 'length', 'we
 
 def choose_category():
     categories = ['length', 'weight', 'temperature']
-    print("Avalailable category:")
+    print("Available categories:")
     for i, cat in enumerate(categories, start=1):
         print(f"- {i}: {cat}")
     return categories
@@ -60,14 +60,14 @@ def choose_unit(unit_list, label): #label can be 'from' or 'to'
 
 
 if __name__ == "__main__":
-    choose_category()
-cat_choice= int(input("Enter the category number: "))
-category = choose_category()[cat_choice - 1]
+    categories = choose_category()
+    cat_choice = int(input("Enter the category number: "))
+    category = categories[cat_choice - 1]
 
-unit_list = get_unit_options(category)
-from_unit = choose_unit(unit_list, "FROM")
-to_unit = choose_unit(unit_list, "TO")
+    unit_list = get_unit_options(category)
+    from_unit = choose_unit(unit_list, "FROM")
+    to_unit = choose_unit(unit_list, "TO")
 
-Value= float(input("Enter the value to convert: "))
-result = convert(Value, from_unit, to_unit, category)
-print(f"{Value} {from_unit} = {result:.2f} {to_unit}")
+    value = float(input("Enter the value to convert: "))
+    result = convert(value, from_unit, to_unit, category)
+    print(f"{value} {from_unit} = {result:.2f} {to_unit}")
