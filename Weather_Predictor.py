@@ -1,13 +1,8 @@
 # Weather Data Analyzer
 
-temps = []
+import requests  # import requests module to make HTTP requests
 
-import requests # import requests module to make HTTP requests  
-print(requests.__file__) # print the location of requests module
-print(requests.__version__) # print the version of requests module
-
-
-url = "https://api.open-meteo.com/v1/forecast" # request info from open-meteo. It is free weather API and does not require an API key.   
+url = "https://api.open-meteo.com/v1/forecast" # request info from open-meteo. It is free weather API and does not require an API key.
 #data collected from metrological agencies: NOAA (National Oceanic and Atmospheric Administration), Environment Canada, DWD(Germany), ECMWF(Europe),MeteoFrance and others. 
 cities = {
     1: ("Toronto", 43.65107, -79.347015),
@@ -43,23 +38,28 @@ except ValueError:
 city_name, lat, lon = cities[choice]
 
 params = { "latitude": lat, # city latitude
-          "longitude": lon, # city longitude 
+          "longitude": lon, # city longitude
           "daily": "temperature_2m_max,temperature_2m_min",
           "hourly": "wind_speed_10m",
-          "timezone": "America/Toronto" 
+          "timezone": "America/Toronto"
           }
- 
-response = requests.get(url, params=params) # make a GET request to the API with the specified parameters
-data = response.json() # parse the JSON response into a Python dictionary
-#print(data) # print the entire JSON data
+
+try:
+    response = requests.get(url, params=params, timeout=10)  # make a GET request to the API with the specified parameters
+    response.raise_for_status()  # raise an exception for HTTP error status codes (4xx/5xx)
+    data = response.json()  # parse the JSON response into a Python dictionary
+except requests.exceptions.RequestException as e:
+    print(f"Could not reach the weather service: {e}")
+    exit()
 
 print(f"For next 7 Days temperatures in {city_name}:")
 for i in range(7):
-    day= data["daily"]["time"][i] # get the date for the day
-    tmax = data["daily"]["temperature_2m_max"][i] # get the max temperature for the day
-    tmin = data["daily"]["temperature_2m_min"][i] # get the min temperature for the day
-    wind_speed = data["hourly"]["wind_speed_10m"][i] # get the wind speed for the day    
-    print(f"Day {i+1} ({day}): Max Temp: {tmax}°C, Min Temp: {tmin}°C, Wind Speed: {wind_speed} km/h") # print the temperatures for the day
-   # degree Celsius power symbol: °C is typed using: Alt + 0176 on numeric keypad
-    ###temps.append((tmax, tmin)) # append the max and min temperatures as a tuple to the temps list   
-    #Note: we can include other parameters like humidity, precipitation, etc. by modifying the API request parameters above.    
+    day = data["daily"]["time"][i]  # get the date for the day
+    tmax = data["daily"]["temperature_2m_max"][i]  # get the max temperature for the day
+    tmin = data["daily"]["temperature_2m_min"][i]  # get the min temperature for the day
+    # hourly data is reported every hour, so day i's "midday" reading sits at hour i*24 + 12
+    hour_index = i * 24 + 12
+    wind_speed = data["hourly"]["wind_speed_10m"][hour_index]  # midday wind speed for the day
+    print(f"Day {i+1} ({day}): Max Temp: {tmax}°C, Min Temp: {tmin}°C, Midday Wind Speed: {wind_speed} km/h")
+    # degree Celsius symbol: °C is typed using Alt + 0176 on the numeric keypad
+    # Note: other parameters like humidity or precipitation can be added to the API request above.
