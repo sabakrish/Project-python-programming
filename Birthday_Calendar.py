@@ -1,4 +1,4 @@
-# CREATE CALANDAR FOR A GIVEN MONTH AND YEAR
+# CREATE CALENDAR FOR A GIVEN MONTH AND YEAR
 # display the day , month and year in the calender and say what is the day
 
 import calendar
