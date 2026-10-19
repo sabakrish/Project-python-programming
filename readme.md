@@ -38,7 +38,7 @@ A Python-based puzzle game demonstrating programming logic and user interaction.
 
 ### 4. File Organizer
 A Python script demonstrating file and folder management.
-**Files:** `File_Organizer.py`, `File_organizer.ipynb`
+**Files:** `File_Organizer.py`, `File_Organizer.ipynb`
 
 ### 5. Birthday Calendar
 A Python program exploring probability through the birthday Calendar.
