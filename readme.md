@@ -10,7 +10,7 @@ This repository contains Python programming exercises and projects completed as 
 
 ## Projects
 
-### Unit Conversion
+### 1. Unit Conversion
 
 This Python project converts measurements between different units of length, weight, and temperature.
 
@@ -45,7 +45,7 @@ A Python-based puzzle game demonstrating programming logic and user interaction.
 A Python script demonstrating file and folder management.
 
 ### 5. Birthday Calendar
-A Python program exploring probability through the birthday problem.
+A Python program exploring probability through the birthday Calendar.
 
 ## Key Learning Outcomes
 - Python programming fundamentals
