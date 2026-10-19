@@ -1,51 +1,48 @@
 # Python Programming Projects
 
 ## Overview
-This repository contains Python programming exercises and projects completed as part of my Data Science and AI Specialist studies.
+This repository contains Python programming exercises and projects completed as part of my Data Science and AI Specialist studies. Each project has a Python script (`.py`) and, in most cases, a Jupyter/Colab notebook (`.ipynb`) version.
 
 ## Technologies Used
 - Python 3
 - Visual Studio Code
+- Google Colab
 - Git and GitHub
 
 ## Projects
 
 ### 1. Unit Conversion
-
-This Python project converts measurements between different units of length, weight, and temperature.
+Converts measurements between different units of length, weight, and temperature.
 
 **Features:**
+- **Length:** centimetres, millimetres, metres, kilometres, inches, feet, yards, and miles.
+- **Weight:** grams, kilograms, and pounds.
+- **Temperature:** Celsius and Fahrenheit.
 
-- **Length Conversion:** Convert between centimetres, millimetres, metres, kilometres, inches, feet, yards, and miles.
-- **Weight Conversion:** Convert between grams, kilograms, and pounds.
-- **Temperature Conversion:** Convert between Celsius and Fahrenheit.
+**Files:** `Unit_Conversion.py`, `Unit_Conversion.ipynb`
 
-**Technologies Used:** Python 3
-
-**How to Run:**
-1. Download or clone this repository from GitHub.
-2. Open the project in Visual Studio Code or Google Colab.
-3. Run `Unit_Conversion.py`.
-4. Enter the measurement and select the units to convert.
-
-**Example:**
+**Example conversions:**
 - Length: 100 kilometres to inches
-- Weight: Kilograms to pounds
+- Weight: kilograms to pounds
 - Temperature: Celsius to Fahrenheit
 
-This project demonstrates Python programming fundamentals, user input, conditional statements, and mathematical calculations.
+Demonstrates user input, conditional statements, and mathematical calculations.
 
 ### 2. Weather Predictor
 A Python exercise demonstrating conditional logic and decision-making.
+**Files:** `Weather_Predictor.py`, `Weather_Predictor.ipynb`
 
 ### 3. Puzzle Game
 A Python-based puzzle game demonstrating programming logic and user interaction.
+**Files:** `puzzle_game.py`, `puzzle_game.ipynb`
 
 ### 4. File Organizer
 A Python script demonstrating file and folder management.
+**Files:** `File_Organizer.py`, `File_organizer.ipynb`
 
 ### 5. Birthday Calendar
 A Python program exploring probability through the birthday Calendar.
+**Files:** `Birthday_Calendar.py`, `Birthday_Calendar.ipynb`
 
 ## Key Learning Outcomes
 - Python programming fundamentals
@@ -56,15 +53,17 @@ A Python program exploring probability through the birthday Calendar.
 - Basic probability
 - Git and GitHub version control
 
-
 ## How to Run the Projects
-1.  Download or clone this repository from GitHub.
-2. Open the project in Visual Studio Code or Google Colab.
-3. Ensure Python 3 is installed.
-4. Run the relevant Python file:
-
+1. Download or clone this repository from GitHub.
+2. Make sure Python 3 is installed.
+3. (Optional) Install dependencies:
 ```bash
-python filename.py
-For example  Run `Unit_Conversion.py`.
-4. Enter the measurement and select the units to convert.
+   pip install -r requirements.txt
+```
+4. Run the Python file for the project you want:
+```bash
+   python Unit_Conversion.py
+```
+5. Follow the on-screen prompts. For example, in Unit Conversion, enter the measurement and choose the units to convert.
 
+To use a notebook instead, open the `.ipynb` file in Visual Studio Code or Google Colab and run the cells.
