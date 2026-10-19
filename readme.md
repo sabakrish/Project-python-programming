@@ -42,8 +42,11 @@ A Python script demonstrating file and folder management.
 **Files:** `File_Organizer.py`, `File_Organizer.ipynb`
 
 ### 5. Birthday Calendar
-A Python program exploring probability through the birthday Calendar.
+### 5. Birthday Calendar
+A Python program that takes any date, such as a birthday, anniversary, or other special day, and shows which day of the week it falls on (Monday, Tuesday, and so on) along with the calendar for that month.
 **Files:** `Birthday_Calendar.py`, `Birthday_Calendar.ipynb`
+**Example:**
+- Enter 25 December 2030 to see which weekday it falls on and view December's calendar.
 
 ## Key Learning Outcomes
 - Python programming fundamentals
