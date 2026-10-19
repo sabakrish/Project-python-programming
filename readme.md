@@ -34,7 +34,7 @@ A Python exercise demonstrating conditional logic and decision-making.
 
 ### 3. Puzzle Game
 A Python-based puzzle game demonstrating programming logic and user interaction.
-**Files:** `puzzle_game.py`, `puzzle_game.ipynb`
+**Files:** `Puzzle_Game.py`, `Puzzle_Game.ipynb`
 
 ### 4. File Organizer
 A Python script demonstrating file and folder management.
