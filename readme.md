@@ -29,16 +29,24 @@ Converts measurements between different units of length, weight, and temperature
 Demonstrates user input, conditional statements, and mathematical calculations.
 
 ### 2. Weather Predictor
-A Python exercise demonstrating conditional logic and decision-making. **Files:** `Weather_Predictor.py`, `Weather_Predictor.ipynb`
+A Python exercise demonstrating conditional logic and decision-making.
+
+**Files:** `Weather_Predictor.py`, `Weather_Predictor.ipynb`
 
 ### 3. Puzzle Game
-A Python-based puzzle game demonstrating programming logic and user interaction. **Files:** `Puzzle_Game.py`, `Puzzle_Game.ipynb`
+A Python-based puzzle game demonstrating programming logic and user interaction.
+
+**Files:** `Puzzle_Game.py`, `Puzzle_Game.ipynb`
 
 ### 4. File Organizer
-A Python script demonstrating file and folder management. **Files:** `File_Organizer.py`, `File_Organizer.ipynb`
+A Python script demonstrating file and folder management.
+
+**Files:** `File_Organizer.py`, `File_Organizer.ipynb`
 
 ### 5. Birthday Calendar
-A Python program that takes any date, such as a birthday, anniversary, or other special day, and shows which day of the week it falls on (Monday, Tuesday, and so on) along with the calendar for that month. **Files:** `Birthday_Calendar.py`, `Birthday_Calendar.ipynb`
+A Python program that takes any date, such as a birthday, anniversary, or other special day, and shows which day of the week it falls on (Monday, Tuesday, and so on) along with the calendar for that month.
+
+**Files:** `Birthday_Calendar.py`, `Birthday_Calendar.ipynb`
 
 **Example:**
 - Enter 25 December 2030 to see which weekday it falls on and view December's calendar.
@@ -49,20 +57,24 @@ A Python program that takes any date, such as a birthday, anniversary, or other 
 - Conditional statements and loops
 - Functions and problem-solving
 - File handling and directory management
-- Basic probability
+- Working with dates and calendars
 - Git and GitHub version control
 
 ## How to Run the Projects
 1. Download or clone this repository from GitHub.
 2. Make sure Python 3 is installed.
 3. (Optional) Install dependencies:
+
 ```bash
-            pip install -r requirements.txt
+   pip install -r requirements.txt
 ```
+
 4. Run the Python file for the project you want:
+
 ```bash
-            python Unit_Conversion.py
+   python Unit_Conversion.py
 ```
+
 5. Follow the on-screen prompts. For example, in Unit Conversion, enter the measurement and choose the units to convert.
 
 To use a notebook instead, open the `.ipynb` file in Visual Studio Code or Google Colab and run the cells.
