@@ -35,7 +35,7 @@ This Python project converts measurements between different units of length, wei
 
 This project demonstrates Python programming fundamentals, user input, conditional statements, and mathematical calculations.
 
-### 2. Weather Prediction
+### 2. Weather Predictor
 A Python exercise demonstrating conditional logic and decision-making.
 
 ### 3. Puzzle Game
@@ -44,7 +44,7 @@ A Python-based puzzle game demonstrating programming logic and user interaction.
 ### 4. File Organizer
 A Python script demonstrating file and folder management.
 
-### 5. Birthday Problem
+### 5. Birthday Calendar
 A Python program exploring probability through the birthday problem.
 
 ## Key Learning Outcomes
