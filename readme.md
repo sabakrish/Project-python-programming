@@ -30,6 +30,7 @@ Demonstrates user input, conditional statements, and mathematical calculations.
 
 ### 2. Weather Predictor
 A Python exercise demonstrating conditional logic and decision-making.
+
 **Files:** `Weather_Predictor.py`, `Weather_Predictor.ipynb`
 
 ### 3. Puzzle Game
@@ -58,11 +59,11 @@ A Python program exploring probability through the birthday Calendar.
 2. Make sure Python 3 is installed.
 3. (Optional) Install dependencies:
 ```bash
-   pip install -r requirements.txt
+            pip install -r requirements.txt
 ```
 4. Run the Python file for the project you want:
 ```bash
-   python Unit_Conversion.py
+            python Unit_Conversion.py
 ```
 5. Follow the on-screen prompts. For example, in Unit Conversion, enter the measurement and choose the units to convert.
 
